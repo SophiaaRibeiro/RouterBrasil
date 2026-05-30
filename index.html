@@ -104,8 +104,7 @@
                             negócios eletrônicos, desde 2005 destacando- nos por
                             oferecer produtos e serviços com o parceiro da maior
                             empresa de tecnologia do mundo, a CISCO SYSTEM,
-                            empresa que possui o maior MARKET SHARE do segmento.
-                            Estamos localizados no Estado de São Paulo.
+                            empresa que possui o maior MARKET SHARE do segmento. Localizados em Santos/SP, com uma loja online.                           
                         </p>
                     </div>
                     <div class="cards">
@@ -159,27 +158,76 @@
             </section>
             <section id="products">
                 <div class="container">
-                    <div class="product">
+
+                                            <div class="products-filter">
+
+                            <input
+                                type="text"
+                                id="searchProduct"
+                                placeholder="Pesquisar produto..."
+                            />
+
+                            <select id="categoryFilter">
+                                <option value="all">Todas as categorias</option>
+                                <option value="Roteadores Corporativos">
+                                    Roteadores Corporativos
+                                </option>
+                                <option value="Equipamentos de Rede">
+                                    Equipamentos de Rede
+                                </option>
+                                <option value="Segurança da Informação">
+                                    Segurança da Informação
+                                </option>
+                                <option value="Redes Wireless">
+                                    Redes Wireless
+                                </option>
+                            </select>
+
+                        </div>
+
+                   <div class="product" data-category="Roteadores Corporativos">
                         <img
                             src="./src/imgs/product1.png"
                             alt="Equipamentos de Borda"
                         />
                         <div class="product-content">
+                            <span class="product-category">
+                                Roteadores Corporativos
+                            </span>
+
                             <h2>EQUIPAMENTOS DE BORDA</h2>
-                            <p>
+                                <p>
+                                    Trabalhamos com toda Linha de Roteadores Cisco para
+                                    empresas de pequeno, médio e grande porte.
+                                </p>
+
+                                <ul class="specs">
+                                    <li>Suporte a SD-WAN</li>
+                                    <li>VPN integrada</li>
+                                    <li>Portas Gigabit Ethernet</li>
+                                    <li>Gerenciamento remoto</li>
+                                    <li>Firewall embarcado</li>
+                                </ul>
+                            <!-- <p>
                                 Trabalhamos com toda Linha de Roteadores CISCO É
                                 o Roteador que atua como portão de entrada/saida
                                 para um SA. Implemente uma SD-WAN, Virtualize
                                 seu ramo e Proteja sua Filial e WANng industry.
-                            </p>
+                            </p> -->
                         </div>
                     </div>
-                    <div class="product">
+                    <div class="product" data-category="Equipamentos de Rede">
+                         
+
                         <img
                             src="./src/imgs/product2.png"
                             alt="Switch e Router"
-                        />
+                        />                       
+
                         <div class="product-content">
+                            <span class="product-category">
+                            Equipamentos de Rede
+                        </span>
                             <h2>SWITCH E ROUTER</h2>
                             <p>
                                 Trabalhamos com toda Linha de Switches da Cisco
@@ -191,12 +239,23 @@
                             </p>
                         </div>
                     </div>
-                    <div class="product">
+                    <div class="product" data-category="Segurança da Informação">
+
+                        
+
+
                         <img
                             src="./src/imgs/product3.webp"
                             alt="Firewall e Servidores"
                         />
+
+                        
+
+
                         <div class="product-content">
+                            <span class="product-category">
+                            Segurança da Informação
+                        </span>
                             <h2>FIREWALL E SERVIDORES</h2>
                             <p>
                                 Outra linha de produtos que atuamos são de
@@ -210,13 +269,18 @@
                             </p>
                         </div>
                     </div>
-                    <div class="product">
+                    <div class="product" data-category="Redes Wireless">
                         <img
                             src="./src/imgs/product4.webp"
                             alt="Módulos GBIC SFP CISCO"
                         />
+                        
                         <div class="product-content">
-                            <h2>MODULOS GBIC SFP CISCO</h2>
+
+                            <span class="product-category">
+                                Redes Wireless
+                            </span>
+                                <h2>MODULOS GBIC SFP CISCO</h2>
                             <p>
                                 Roteadores Wireless e Controladoras, Linha
                                 Completa de Roteadores Wireless, Acess Point e
@@ -231,8 +295,43 @@
             <section id="fabricantes">
                 <div class="container">
                     <h2>FABRICANTES</h2>
+
+                    <p class="fabricantes-text">
+                        Clique nos fabricantes para conhecer seus produtos e soluções.
+                    </p>
                     <div>
                         <ul>
+                                <li class="companies">
+                                    <a href="https://www.hp.com/br-pt/home.html" target="_blank">
+                                        <img src="./src/imgs/hp.png" alt="Empresa HP" />
+                                    </a>
+                                </li>
+
+                                <li class="companies">
+                                    <a href="https://www.cisco.com" target="_blank">
+                                        <img src="./src/imgs/cisco.png" alt="Empresa Cisco" />
+                                    </a>
+                                </li>
+
+                                <li class="companies">
+                                    <a href="https://www.dell.com/pt-br" target="_blank">
+                                        <img src="./src/imgs/dell.png" alt="Empresa Dell" />
+                                    </a>
+                                </li>
+
+                                <li class="companies">
+                                    <a href="https://www.fortinet.com/br" target="_blank">
+                                        <img src="./src/imgs/fortinet.png" alt="Empresa Fortinet" />
+                                    </a>
+                                </li>
+
+                                <li class="companies">
+                                    <a href="https://www.juniper.net" target="_blank">
+                                        <img src="./src/imgs/juniper.png" alt="Empresa Juniper Networks" />
+                                    </a>
+                                </li>
+                            </ul>
+                        <!-- <ul>
                             <li class="companies">
                                 <img src="./src/imgs/hp.png" alt="Empresa HP" />
                             </li>
@@ -260,7 +359,7 @@
                                     alt="Empresa Juniper Networks"
                                 />
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
                     <h2>CERTIFICAÇÕES</h2>
                     <p>
@@ -286,11 +385,8 @@
 
             <section id="contato">
                 <div class="container">
-                    <form
-                        class="contact-form"
-                        method="POST"
-                        action="https://formsubmit.co/contato@routerbrasil.com.br"
-                    >
+                   <form class="contact-form" id="contactForm">
+
                         <div class="form-group">
                             <label for="name">Nome</label>
                             <input
@@ -338,21 +434,46 @@
                         <div class="form-actions">
                             <button type="submit">Enviar Mensagem</button>
                         </div>
-                    </form>
 
+                        <div id="successMessage" class="success-message">
+                            ✓ Mensagem enviada com sucesso! Em breve entraremos em contato.
+                        </div>
+
+                    </form>
                     <div class="contact-info">
                         <h2>FALE CONOSCO</h2>
                         <p>
                             Entre em contato conosco! Ficaremos felizes em lhe
                             atender em qualquer ocasião!
                         </p>
-
                         <h2>ESCRITÓRIO</h2>
+
+                        <div class="office-contact">
+                            <p>
+                                <strong>Endereço:</strong>
+                                 Loja Virtual em Santos/SP
+                            </p>
+
+                            <p>
+                                <strong>Telefone:</strong>
+                                (11) 94071-3428
+                            </p>
+
+                            <p>
+                                <strong>Email:</strong>
+                                contato@routerbrasil.com.br
+                            </p>
+                        </div>
+                        <p>
+                            Entre em contato conosco! Ficaremos felizes em lhe
+                            atender em qualquer ocasião!
+                        </p>                       
+                        <!-- <h2>ESCRITÓRIO</h2>
                         <div class="office-contact">
                             <p>Telefone: (11) 94071-3428</p>
                             <p>Email: contato@routerbrasil.com.br</p>
                         </div>
-                        <h2>HORÁRIO COMERCIAL</h2>
+                        <h2>HORÁRIO COMERCIAL</h2> -->
                         <p>
                             Segunda a Sexta: 09:00 - 18:00<br />
                             Sábado: 09:00 - 13:00
@@ -361,25 +482,94 @@
                 </div>
             </section>
         </main>
-        <footer>
-            <div class="container">
-                <ul>
-                    <li><a href="#" id="termsLink">Termos de Uso</a></li>
-                    <li>
-                        <a href="#" id="privacyLink">Política de Privacidade</a>
-                    </li>
-                </ul>
+      <footer>
+    <div class="container footer-container">
 
-                <p>Todos direitos reservados</p>
+        <div class="footer-logo">
+            <a href="#home">
+                <img
+                    src="./src/imgs/logo.png"
+                    alt="Logo Router Brasil"
+                />
+            </a>
 
-                <a href="#home">
-                    <img
-                        src="./src/imgs/logo.png"
-                        alt="nossa logo da Router Brasil Serviços e Vendas de Roteadores"
-                    />
-                </a>
-            </div>
-        </footer>
+            <p>
+                Soluções em equipamentos de rede, segurança e telecomunicações
+                para empresas de todos os portes.
+            </p>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contato</h3>
+
+            <p>                
+             Loja Virtual em Santos/SP
+            </p>
+
+            <p>
+                contato@routerbrasil.com.br
+            </p>
+
+            <p>
+                (11) 94071-3428
+            </p>
+
+            <p style="text-decoration: none;">
+                <a href="https://www.instagram.com/routerbrasilempresa/">@routerbrasilempresa</a> 
+            </p>
+        </div>
+
+        <div class="footer-hours">
+            <h3>Horário de Atendimento</h3>
+
+            <p>
+                Segunda a Sexta<br>
+                09:00 às 18:00
+            </p>
+
+            <p>
+                Sábado<br>
+                09:00 às 13:00
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+            <h3>Informações</h3>
+
+            <ul>
+                <li>
+                    <a href="#" id="termsLink">Termos de Uso</a>
+                </li>
+
+                <li>
+                    <a href="#" id="privacyLink">
+                        Política de Privacidade
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#aboutUs">Quem Somos</a>
+                </li>
+
+                <li>
+                    <a href="#products">Produtos</a>
+                </li>
+
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            © 2025 Router Brasil - Todos os direitos reservados.
+        </p>
+    </div>
+</footer>
 
         <!-- Modal de Termos de Uso -->
         <div id="termsModal" class="modal-overlay">
@@ -502,6 +692,19 @@
             </div>
         </div>
 
+
+<a
+    href="https://wa.me/5511940713428?text=Olá,%20gostaria%20de%20um%20orçamento."
+    class="whatsapp-float"
+    target="_blank"
+    aria-label="Fale conosco pelo WhatsApp"
+>
+    <img
+        src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+        alt="WhatsApp"
+    />
+</a>
+
         <script>
             const btn = document.getElementById("menuBtn");
             const menu = document.getElementById("menu");
@@ -607,7 +810,75 @@
                 }
             });
         </script>
-        <script>
+
+
+     <script>
+        const form = document.getElementById("contactForm");
+const successMessage = document.getElementById("successMessage");
+
+form.addEventListener("submit", function (e) {
+
+    e.preventDefault(); // impede envio real
+
+    successMessage.style.display = "block";
+
+    form.reset();
+
+    setTimeout(() => {
+        successMessage.style.display = "none";
+    }, 5000);
+
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const searchInput = document.getElementById("searchProduct");
+    const categoryFilter = document.getElementById("categoryFilter");
+    const products = document.querySelectorAll(".product");
+
+    function filterProducts() {
+
+        const searchValue = searchInput.value.toLowerCase();
+        const selectedCategory = categoryFilter.value;
+
+        products.forEach(product => {
+
+            const title = product
+                .querySelector("h2")
+                .textContent
+                .toLowerCase();
+
+            const category =
+                product.dataset.category;
+
+            const matchesSearch =
+                title.includes(searchValue);
+
+            const matchesCategory =
+                selectedCategory === "all" ||
+                category === selectedCategory;
+
+            if (matchesSearch && matchesCategory) {
+                product.style.display = "flex";
+            } else {
+                product.style.display = "none";
+            }
+
+        });
+    }
+
+    searchInput.addEventListener("input", filterProducts);
+    categoryFilter.addEventListener("change", filterProducts);
+
+});
+
+     </script>
+
+
+
+
+        <!-- <script>
             document.addEventListener("DOMContentLoaded", () => {
                 const form = document.querySelector(".contact-form");
                 if (!form) return;
@@ -771,6 +1042,6 @@
                     }
                 });
             });
-        </script>
+        </script> -->
     </body>
 </html>
